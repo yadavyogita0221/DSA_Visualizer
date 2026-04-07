@@ -1,0 +1,241 @@
+/* 🌐 GLOBAL */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #eeeef3, #f2dff3);
+  margin: 0;
+  color: #3d2c50;
+}
+
+/* ================= HOME PAGE ================= */
+
+.home {
+  margin-top: 80px;
+}
+
+/* Title */
+.main-title {
+  font-size: 42px;
+  color: #502c4d;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Grid layout */
+.algo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  width: 60%;
+  margin: auto;
+}
+
+/* Buttons as cards */
+.algo-grid button {
+  padding: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 14px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Hover effect */
+.algo-grid button:hover {
+  transform: translateY(-6px) scale(1.03);
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  color: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ================= VISUALIZER ================= */
+
+/* TITLE */
+h2 {
+  margin-top: 20px;
+  font-size: 28px;
+}
+
+/* CONTROLS */
+.controls input,
+.controls button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.controls button {
+  cursor: pointer;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* MAIN LAYOUT */
+.main-layout {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* BARS BOX */
+#bars {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 320px;
+  border-radius: 12px;
+  background: white;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* BAR CONTAINER */
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 6px;
+}
+
+/* LABEL */
+.bar-label {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* BAR */
+.bar {
+  width: 30px;
+  background: linear-gradient(180deg, #36d1dc, #5b86e5);
+  border-radius: 6px 6px 0 0;
+  transition: all 0.4s ease;
+}
+
+/* ================= INFO BOX ================= */
+
+.info-box {
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  text-align: left;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+}
+
+/* FULL WIDTH (Explanation) */
+.full-width {
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* PSEUDOCODE HEIGHT MATCH */
+.pseudo-box {
+  height: 320px;
+  overflow-y: auto;
+}
+
+/* PSEUDOCODE LINES */
+#pseudoCode span {
+  display: block;
+  padding: 6px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* Hover effect for code */
+#pseudoCode span:hover {
+  background: #ecf0f1;
+}
+
+/* CODE BLOCK */
+pre {
+  background: #f4f6f8;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* ================= STATUS ================= */
+
+#status {
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#pass, #complexity {
+  font-weight: bold;
+  color: #555;
+}
+
+/* SPEED */
+#speed {
+  width: 220px;
+  margin: 10px;
+}
+
+/* Explanation formatting */
+#explanationText {
+  white-space: pre-line;
+  line-height: 1.5;
+}
+
+/* ================= ANIMATION COLORS ================= */
+
+.bar.red {
+  background: #e74c3c !important;
+}
+
+.bar.green {
+  background: #2ecc71 !important;
+}
+
+.bar.yellow {
+  background: #f1c40f !important;
+}
+
+.bar.orange {
+  background: #e67e22 !important;
+}
+.main-title {
+  font-size: 48px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  /* 🔥 Gradient text */
+  background: linear-gradient(90deg, #6a5acd, #7b68ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 🚀 ICON STYLE */
+.main-title .icon {
+  font-size: 42px;
+}

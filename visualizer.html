@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 id="title"></h2>
+
+<!-- ✅ Explanation at TOP -->
+<div class="info-box full-width">
+  <h3>📘 Explanation</h3>
+  <p id="explanationText"></p>
+</div>
+
+<!-- ✅ Controls BELOW explanation -->
+<div class="controls">
+  <input type="text" id="arrayInput" placeholder="e.g. 5,2,8,1">
+  <input type="number" id="target" placeholder="Target (for search)">
+  <button onclick="generateArray()">Generate</button>
+  <button onclick="start()">Start</button>
+</div>
+
+<!-- ✅ MAIN LAYOUT -->
+<div class="main-layout">
+
+  <!-- LEFT: Bars -->
+  <div id="bars"></div>
+
+  <!-- RIGHT: Pseudocode -->
+  <div class="info-box pseudo-box">
+    <h3>🧾 Pseudocode</h3>
+    <pre id="pseudoCode"></pre>
+  </div>
+
+</div>
+
+<!-- STATUS -->
+<h3 id="status">👉 Waiting...</h3>
+<h3 id="pass">Pass: 0</h3>
+<h3 id="complexity"></h3>
+
+<!-- SPEED -->
+<label>Speed:</label>
+<input type="range" id="speed" min="200" max="1200" value="700">
+
+<script src="script.js"></script>
+</body>
+</html>

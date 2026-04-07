@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DSA Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="home">
+
+  <h1 class="main-title">🚀 DSA Visualizer</h1>
+  <p class="subtitle">Visualize Algorithms Step-by-Step</p>
+
+  <div class="algo-grid">
+    <button onclick="go('bubble')">🔵 Bubble Sort</button>
+    <button onclick="go('selection')">🟣 Selection Sort</button>
+    <button onclick="go('insertion')">🟡 Insertion Sort</button>
+    <button onclick="go('merge')">🟢 Merge Sort</button>
+    <button onclick="go('linear')">🔍 Linear Search</button>
+    <button onclick="go('binary')">🔎 Binary Search</button>
+  </div>
+
+  <div class="visual-section">
+
+  <div id="bars"></div>
+
+  <div class="info-section">
+    <div class="info-box">
+      <h3>📘 Explanation</h3>
+      <p id="explanationText"></p>
+    </div>
+
+    <div class="info-box">
+      <h3>🧾 Pseudocode</h3>
+      <pre id="pseudoCode"></pre>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<h1 class="main-title">
+  <span class="icon">🚀</span> DSA Visualizer
+</h1>
+
+<script>
+function go(algo){
+  window.location.href = "visualizer.html?algo=" + algo;
+}
+</script>
+
+</body>
+</html>
